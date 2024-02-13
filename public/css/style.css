@@ -1,0 +1,798 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    width: 100%;
+}
+
+span {
+    color: teal;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.bx-menu:before {
+    content: "";
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 2rem;
+    color: teal;
+}
+
+nav {
+    display: flex;
+    gap: 3rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.25rem;
+}
+
+.login {
+    display: flex;
+    gap: 3rem;
+}
+
+.login button {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border: none;
+    border-radius: .5rem;
+    background-color: rgb(212, 212, 212);
+    transition: all 0.3s ease;
+}
+
+.login button:hover {
+    background-color: teal;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hero {
+    padding: 3rem 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: auto 2rem;
+}
+
+.hero-left p {
+    max-width: 700px;
+    font-size: 2rem;
+    text-align: justify;
+    color: rgb(80, 80, 80);
+}
+
+.hero-title {
+    font-size: 5rem;
+}
+
+.hero-left a {
+    width: fit-content;
+    background-color: rgb(231, 231, 231);
+    padding: 0.5rem 1rem;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.hero-left i {
+    margin-left: -0.5rem;
+    padding: .5rem;
+    font-size: 1.75rem;
+    border-radius: 2rem;
+    background-color:  rgb(184, 184, 184);
+}
+
+.hero-left a span {
+    font-size: 2rem;
+}
+
+.hero img {
+    border-radius: 1rem;
+    width: 30em;
+    height: 100%;
+}
+
+.featured {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 3rem 4rem;
+    margin: 0;
+}
+
+.featured-title {
+    color: teal;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+.featured-container {
+    display: flex;
+    gap: 3rem;
+}
+
+.featured .image-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.image-container i {
+    font-size: 2rem;
+    color: teal;
+}
+
+.image-collection {
+    display: flex;
+    gap: 1rem;
+}
+
+.main-image {
+    width: 30vw;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.image-carousell {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.image-carousell img {
+    width: 7vw;
+    height: auto;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+.image-carousell img:hover {
+    cursor: pointer;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: -2rem;
+}
+
+.text-container h2 {
+    color: teal;
+    font-size: 3rem;
+}
+
+.text-container p {
+    font-size: 1.5rem;
+    text-align: justify;
+    color: rgb(80, 80, 80);
+}
+
+.category {
+    padding: 3rem 4rem;
+}
+
+.category-title {
+    color: teal;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.button-container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.button-container button {
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: .75rem 2rem;
+    border: none;
+    border-radius: .5rem;
+    color: teal;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.button-container button:hover {
+    background-color: teal;
+    color: #fff;
+    cursor: pointer;
+}
+
+.category .card-container {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 1rem;
+}
+
+.category .card {
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 21vw;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.category .card img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 1rem;
+}
+
+.category .card h4 {
+    font-size: 2rem;
+    margin: .5rem 0;
+}
+
+.category .card p {
+    margin: .25rem;
+    font-size: 1.25rem;
+}
+
+.category .card button {
+    padding: .5rem;
+    border: none;
+    border-radius: .25rem;
+    margin-top: 1rem;
+    background-color: #fff;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: teal;
+    transition: all 0.3s ease;
+}
+
+.category .card button:hover {
+    background-color: teal;
+    color: #fff;
+    cursor: pointer;
+}
+
+.special-offer {
+    padding: 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.special-offer-title {
+    color: teal;
+    font-size: 4rem;
+    width: 100%;
+}
+
+.special-offer .text-container h4 {
+    font-size: 3rem;
+    text-align: center;
+    color: teal;
+}
+
+.special-offer .text-container p {
+    color: rgb(80, 80, 80);
+    text-align: center;
+}
+
+.special-offer i {
+    transition: all 0.3s ease;
+}
+
+.special-offer i:hover {
+    cursor: pointer;
+}
+
+.special-offer img {
+    transition: all 0.3s ease;
+}
+
+.special-offer img:hover {
+    cursor: pointer;
+}
+
+.special-offer .carousell {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.special-offer .carousell i {
+    font-size: 2rem;
+    color: teal;
+    z-index: 1;
+}
+
+.special-offer .carousell .image-container {
+    height: 25vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.special-offer .carousell img {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    gap: 3rem;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 4rem;
+    gap: 2rem;
+}
+
+.services .left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.services-title {
+    color: teal;
+    font-size: 4rem;
+    width: 100%;
+}
+
+.services .left h4 {
+    font-size: 2rem;
+}
+
+.services .left p {
+    font-size: 1.5rem;
+    color: rgb(80, 80, 80);
+}
+
+.services .left img {
+    border-radius: 1rem;
+}
+
+.services .card-container {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services .card {
+    padding: 2rem 3rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    width: 55vh;
+    background-color: #fff;
+}
+
+.services .title-container {
+    display: flex;
+    font-size: 1.5rem;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.services .title-container i {
+    color: white;
+    background-color: teal;
+    padding: .5rem;
+    border-radius: 2rem;
+}
+
+.services .card p {
+    font-size: 1rem;
+    color: rgb(80, 80, 80);
+}
+
+.footer {
+    color: #fff;
+    padding: 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 66, 66, 0.89);
+    gap: 5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: auto;
+}
+
+.footer .left h2 {
+    font-size: 2rem;
+}
+
+.footer .left p {
+    margin-right: 2rem;
+    font-size: 1.5rem;
+}
+
+.footer .right {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer .right h4 {
+    font-size: 1.5rem;
+}
+
+.footer .right .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer .text-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.footer .text-container p{
+    color: #fff;
+    font-size: 1rem;
+}
+
+.footer .bottom {
+    margin: auto;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: .5rem;
+    border: .25rem solid #f1f1f1;
+}
+
+@media screen and (max-width: 1258px) {
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .featured-title, .category-title, .special-offer-title,.services-title {
+        font-size: 3.75rem;
+    }
+
+    .hero-left p {
+        font-size: 1.75rem;
+    }
+
+    .hero-left i {
+        font-size: 1.75rem;
+    }
+
+    .hero-left a span {
+        font-size: 2rem;
+    }
+
+    .hero img {
+        width: 25em;
+    }
+
+    .featured .text-container {
+        text-align: center;
+    }
+
+    .featured .text-container h2 {
+        font-size: 2.75rem;
+    }
+
+    .featured p {
+        font-size: 1.5rem;
+    }
+
+    .featured .main-image {
+        width: 40vw;
+    }
+
+    .featured .image-carousell img {
+        width: 9vw;
+    }
+
+    .category .card {
+        min-width: 40vw;
+    }
+
+    .button-container button {
+        font-size: 1.15rem;
+    }
+
+    .special-offer .text-container h4 {
+        font-size: 2.75rem;
+    }
+
+    .special-offer .text-container p {
+        font-size: 1.5rem;
+    }
+
+    .special-offer .carousell .image-container {
+        height: 23vw;
+    }
+
+    .services .left h4 {
+        font-size: 2rem;
+    }
+
+    .services .left p {
+        font-size: 1.5rem;
+    }
+
+    .services .card {
+        min-width: fit-content;
+    }
+
+    .footer .left h2 {
+        font-size: 1.75rem;
+    }
+
+    .footer .left p {
+        font-size: 1.25rem;
+    }
+
+    .footer .right h4 {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .logo {
+        display: none;
+    }
+
+    nav a {
+        font-size: 1.10rem;
+    }
+
+    .login button {
+        font-size: 1.1rem;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    .hero-left i {
+        font-size: 1.5rem;
+    }
+
+    .hero-left a span {
+        font-size: 1.5rem;
+    }
+
+    .hero img {
+        width: 20em;
+    }
+
+    .featured-title, .category-title, .special-offer-title,.services-title {
+        font-size: 3rem;
+    }
+
+    .featured-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featured-container .main-image {
+        width: 50vw;
+    }
+
+    .featured .image-carousell img {
+        width: 11.5vw;
+    }
+
+    .featured .text-container h2 {
+        font-size: 2rem;
+    }
+
+    .featured p {
+        font-size: 1.25rem;
+    }
+
+    .button-container button {
+        font-size: 1rem;
+    }
+
+    .special-offer .text-container h4 {
+        font-size: 2rem;
+    }
+
+    .special-offer .text-container p {
+        font-size: 1.25rem;
+    }
+
+    .services .left h4 {
+        font-size: 1.5rem;
+    }
+
+    .services .left p {
+        font-size: 1.25rem;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .footer .left {
+        text-align: center;
+    }
+
+    .footer .right {
+        justify-content: space-evenly;
+    }
+
+    .footer .left p {
+        margin: 0;
+    }
+
+    .footer i {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 959px) {
+    .special-offer .carousell .image-container img:last-child {
+        display: none;
+    }
+
+    .special-offer .carousell .image-container {
+        height: 35vw;
+    }
+
+    .category .card {
+        min-width: 60vw;
+    }
+
+    .footer {
+        padding: 2rem 3rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    nav a {
+        display: none;
+    }
+
+    .bx-menu:before {
+        content: "\eb5f";
+    }
+
+    header i {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .hero img {
+        display: none;
+    }
+
+    .featured-title, .category-title, .special-offer-title,.services-title {
+        font-size: 2.5rem;
+    }
+
+    .featured .text-container h2 {
+        font-size: 1.75rem;
+    }
+
+    .featured p {
+        font-size: 1rem;
+    }
+
+    .category .card {
+        min-width: 60vh;
+    }
+
+    .special-offer .text-container h4 {
+        font-size: 1.75rem;
+    }
+
+    .special-offer .text-container p {
+        font-size: 1.15rem;
+    }
+
+    .special-offer .carousell .image-container {
+        height: 50vh;
+        width: 100%;
+    }
+
+    .special-offer .carousell .image-container img:nth-child(2) {
+        display: none;
+    }
+
+    .services .left {
+        margin: 1rem 0;
+    }
+
+    .services .left h4 {
+        font-size: 1.25rem;
+    }
+
+    .services .left p {
+        font-size: 1rem;
+    }
+
+    .services .card {
+        padding: 1.5rem 2.5rem;
+    }
+
+    .services .card h4 {
+        font-size: 1.25rem;
+    }
+
+    .footer h2 {
+        font-size: 1.5rem;
+    }
+
+    .footer .left p {
+        font-size: 1.1rem;
+    }
+}
